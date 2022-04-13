@@ -6,9 +6,9 @@ body {
 select {
     border-width: 1px;
     border-color: #E0E0E0;
-    font-size: 0.5rem;
+    font-size: 1rem;
     padding-right: 20px;
-    height: 30px;
+    height: 35px;
     width: 150px;
 }
 
@@ -41,11 +41,11 @@ select {
 
 .btn-green {
     width: 197px;
-    height: 30px;
+    height: 35px;
     text-align: center;
     color: white;
     background-color: #00723E;
-    font-size: 0.5rem;
+    font-size: 1rem;
     vertical-align: middle;
 }
 
