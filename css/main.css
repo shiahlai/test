@@ -1,5 +1,6 @@
 body {
     font-family: Noto Sans;
+    font-size: 1.5rem;
 }
 
 select {
@@ -30,14 +31,12 @@ select {
 }
 
 .searchbox {
-    margin-top: -43px;
     background-color:white ;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.11);
     z-index: 1;
     padding-top: 24px;
     padding-bottom: 24px;
-    align-items: center;
-    justify-content: center;
+    margin: -43px auto auto 0;
 }
 
 .btn-green {
@@ -82,3 +81,22 @@ select {
     background-color: #03B13A;
 }
 
+.mask {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background-attachment:fixed;
+}
+
+.footer-text {
+    font-size: 1rem;
+}
+
+.mx-auto {
+    margin: 0 auto;
+  }
