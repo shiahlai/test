@@ -78,3 +78,7 @@ select {
     height: 200px;
 }
 
+.bg-footer {
+    background-color: #03B13A;
+}
+
