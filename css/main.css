@@ -26,6 +26,7 @@ select {
     background-image: url('../image/search_bg.png');
     z-index: 0;
     text-align: center;
+    width: 1084px;
 }
 
 .searchbox {
@@ -33,7 +34,10 @@ select {
     background-color:white ;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.11);
     z-index: 1;
-    padding: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-green {
@@ -70,4 +74,7 @@ select {
     object-fit:cover;
 }
 
+.h-200 {
+    height: 200px;
+}
 
