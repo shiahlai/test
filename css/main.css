@@ -112,3 +112,8 @@ select {
 .small-text {
     font-size: 0.8rem;
 }
+
+.info-img {
+    width: 164px;
+    height: 100%;
+}
