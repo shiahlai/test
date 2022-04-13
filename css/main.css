@@ -100,3 +100,15 @@ select {
 .mx-auto {
     margin: 0 auto;
   }
+
+.card-title {
+    color: #00723E;
+}
+
+.content {
+    font-size: 1.25rem;
+}
+
+.small-text {
+    font-size: 0.8rem;
+}
