@@ -117,3 +117,16 @@ select {
     width: 164px;
     height: 100%;
 }
+
+.card-img-1 {
+    background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+    background: url('../image/1.jpg');
+}
+
+.hero-image {
+    background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
