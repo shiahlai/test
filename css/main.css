@@ -9,7 +9,7 @@ select {
     font-size: 1rem;
     padding-right: 20px;
     height: 35px;
-    width: 150px;
+    width: 100%;
 }
 
 a:link {
@@ -60,7 +60,7 @@ a:link {
 }
 
 .btn-green {
-    width: 197px;
+    width: 100%;
     height: 35px;
     text-align: center;
     color: white;
@@ -135,17 +135,16 @@ a:link {
 }
 
 .info-img {
-    width: 164px;
+    width: 100%;
     height: 100%;
-    background-repeat: no-repeat !important;
-	background-position: center center !important;
-	background-size: cover !important;
+    object-fit: cover;   
 }
 
 .hero-image {
     background-repeat: no-repeat !important;
 	background-position: center center !important;
 	background-size: cover !important;
+    filter: grayscale(30%);
 }
 
 .card-image-1 {
@@ -173,4 +172,16 @@ a:link {
 
 .thumbnail-container {
     width: 1092px;
+}
+
+.search-bar {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.carousel-text {
+    bottom: 30% !important;
+    font-size: 2rem;
 }
