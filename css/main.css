@@ -144,7 +144,7 @@ a:link {
     background-repeat: no-repeat !important;
 	background-position: center center !important;
 	background-size: cover !important;
-    filter: grayscale(30%);
+    filter: grayscale(10%);
 }
 
 .card-image-1 {
@@ -152,6 +152,7 @@ a:link {
 	background-position: center center !important;
 	background-size: cover !important;
     height: 225px;
+    filter: grayscale(10%);
 }
 
 .thumbnail-lg {
