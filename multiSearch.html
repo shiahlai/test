@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="plugin/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="plugin/bootstrap/bootstrap.5.0.2.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="/plugin/awesome/css/all.min.css" rel="stylesheet">
+    <link href="/plugin/awesome/css/v4-shims.min.css" rel="stylesheet">
+    <link href="/plugin/awesome/css/svg-with-js.min.css" rel="stylesheet">
     <style>
         
     </style>
@@ -17,30 +20,25 @@
     <body>
         <!-- header start -->
         <header class="bd-header py-3 d-flex align-items-stretch bordertop">
-            <div class="container-fluid d-flex align-items-center">
-              <h1 class="d-flex align-items-center fs-4 mb-0">
+          <div class="container-fluid d-flex align-items-center">
+            <a href="index.html" alt="回主頁" >
+              <h1 class="d-flex align-items-center fs-4 mb-0 fw-bolder">
                 <img src="/image/logo.png" width="41" height="54" class="me-3" alt="">
                 農村再生執行及管理系統
               </h1>
-            </div>
-        </header><!-- header end -->
+            </a>
+          </div>
+      </header><!-- header end -->
 
 
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item carousel-img active">
-                <img src="image/hero1.jpg" class="d-block w-100 hero-image" alt="">
+              <div class="carousel-item carousel-img active hero-image" style="background: url('image/hero1.jpg');">
                 <div class="carousel-caption d-none d-md-block">
                   <div class="row">
                     <div class="col-8 text-start">
                       <p class="fs-2 fw-bolder text-start">成果交流專區</p>
                     </div>
-                    <!-- <div class="col-4 text-end">
-                      <a class="btn btn-green" href="#!" role="button">
-                        <i class="fab fa-twitter me-2"></i>
-                        回上一頁
-                      </a>
-                    </div> -->
                   </div>         
                 </div>
               </div>
@@ -49,13 +47,11 @@
 
         <div class=" bg-light">
           <div class="row gx-2">
-            <div class="col-3 bg-white px-5">
+            <!-- Left column -->
+            <div class="col-2 bg-white px-5">
               <div class="d-flex align-items-center">
                 <p class="small-text fw-bolder">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16">
-                    <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"></path>
-                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"></path>
-                  </svg>
+                  <i class="fas fa-align-right"></i>
                   篩選
                 </p>                    
               </div>
@@ -165,131 +161,266 @@
 
 
             </div>
+
+            <!-- Middle column -->
             <div class="col-6 bg-white">
               <div class="container">
 
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+                <div class="row d-flex bd-highlight mb-3">
+                  <div class="col subtitle p-2 bd-highlight">共103筆</div>
+                  <div class="col ms-auto p-2 bd-highlight">
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination justify-content-end">
+                        <li class="page-item">
+                          <a class="page-link text-info" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="page-item"><a class="page-link text-info" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link text-info" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link text-info" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link text-info" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3 mb-5">
+
                   <div class="col">
                     <div class="card shadow-sm">
-                      <div class="bd-placeholder-img card-img-top card-img-1" width="100%" height="225">
-                        <div class="h-100 p-5 border rounded-3">
-                          <h2>108 年度案件</h2>
-                          <h2>埔里鎮桃米社區休憩空間建置統包工程</h2>
-                          <p>#園冶獎    #台灣景觀大獎</p>
-                        </div>
-                        
-                      </div>
-          
-                      <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <div class="bd-placeholder-img card-img-top card-image-1" style="background: url('image/info-hero.jpg');">
+                        <div class="h-100 p-2 border rounded-3 text-white">
+                          <div class="d-flex align-items-start flex-column" style="height: 200px;">
+                            <div class="mb-auto p-2 bd-highlight">
+                              <ul class="list-unstyled">
+                                <li>108 年度案件</li>
+                                <li>埔里鎮桃米社區休憩空間建置統包工程</li>
+                              </ul>
+                            </div>
+                            <div class="p-2 bd-highlight">#園冶獎 #台灣景觀大獎</div>
                           </div>
-                          <small class="text-muted">9 mins</small>
-                        </div>
+                        </div>                        
+                      </div>          
+                      <div class="card-body">
+                        <div class="d-flex bd-highlight">
+                          <div class="p-2 w-100 bd-highlight">
+                            <ul class="list-unstyled fw-bolder" style="font-size: 1rem;">
+                              <li>執行單位： 南投分局</li>
+                              <li>案件位置： 南投縣 埔里鎮 桃米里</li>
+                            </ul>
+                          </div>
+                          <div class="p-2 flex-shrink-1 bd-highlight">
+                            <a href="info.html">
+                              <span class="fa-stack fa-1x" style="color: #585858;">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </div>                        
                       </div>
                     </div>
                   </div>
 
                   <div class="col">
                     <div class="card shadow-sm">
-                      <div class="bd-placeholder-img card-img-top card-img-1" width="100%" height="225">
-                        <div class="h-100 p-5 border rounded-3">
-                          <h2>108 年度案件</h2>
-                          <h2>埔里鎮桃米社區休憩空間建置統包工程</h2>
-                          <p>#園冶獎    #台灣景觀大獎</p>
-                        </div>
-                        
-                      </div>
-          
-                      <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <div class="bd-placeholder-img card-img-top card-image-1" style="background: url('image/card2.jpg');">
+                        <div class="h-100 p-2 border rounded-3 text-white">
+                          <div class="d-flex align-items-start flex-column" style="height: 200px;">
+                            <div class="mb-auto p-2 bd-highlight">
+                              <ul class="list-unstyled">
+                                <li>108 年度案件</li>
+                                <li>埔里鎮桃米社區休憩空間建置統包工程</li>
+                              </ul>
+                            </div>
+                            <div class="p-2 bd-highlight">#園冶獎 #台灣景觀大獎</div>
                           </div>
-                          <small class="text-muted">9 mins</small>
-                        </div>
+                        </div>                        
+                      </div>          
+                      <div class="card-body">
+                        <div class="d-flex bd-highlight">
+                          <div class="p-2 w-100 bd-highlight">
+                            <ul class="list-unstyled fw-bolder" style="font-size: 1rem;">
+                              <li>執行單位： 南投分局</li>
+                              <li>案件位置： 南投縣 埔里鎮 桃米里</li>
+                            </ul>
+                          </div>
+                          <div class="p-2 flex-shrink-1 bd-highlight">
+                            <span class="fa-stack fa-1x" style="color: #585858;">
+                              <i class="fas fa-circle fa-stack-2x"></i>
+                              <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
+                            </span>
+                          </div>
+                        </div>                        
                       </div>
                     </div>
                   </div>
 
                   <div class="col">
                     <div class="card shadow-sm">
-                      <div class="bd-placeholder-img card-img-top card-img-1" width="100%" height="225">
-                        <div class="h-100 p-5 border rounded-3">
-                          <h2>108 年度案件</h2>
-                          <h2>埔里鎮桃米社區休憩空間建置統包工程</h2>
-                          <p>#園冶獎    #台灣景觀大獎</p>
-                        </div>
-                        
-                      </div>
-          
-                      <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <div class="bd-placeholder-img card-img-top card-image-1" style="background: url('image/card3.jpg');">
+                        <div class="h-100 p-2 border rounded-3 text-white">
+                          <div class="d-flex align-items-start flex-column" style="height: 200px;">
+                            <div class="mb-auto p-2 bd-highlight">
+                              <ul class="list-unstyled">
+                                <li>108 年度案件</li>
+                                <li>埔里鎮桃米社區休憩空間建置統包工程</li>
+                              </ul>
+                            </div>
+                            <div class="p-2 bd-highlight">#園冶獎 #台灣景觀大獎</div>
                           </div>
-                          <small class="text-muted">9 mins</small>
-                        </div>
+                        </div>                        
+                      </div>          
+                      <div class="card-body">
+                        <div class="d-flex bd-highlight">
+                          <div class="p-2 w-100 bd-highlight">
+                            <ul class="list-unstyled fw-bolder" style="font-size: 1rem;">
+                              <li>執行單位： 南投分局</li>
+                              <li>案件位置： 南投縣 埔里鎮 桃米里</li>
+                            </ul>
+                          </div>
+                          <div class="p-2 flex-shrink-1 bd-highlight">
+                            <span class="fa-stack fa-1x" style="color: #585858;">
+                              <i class="fas fa-circle fa-stack-2x"></i>
+                              <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
+                            </span>
+                          </div>
+                        </div>                        
                       </div>
                     </div>
                   </div>
 
                   <div class="col">
                     <div class="card shadow-sm">
-                      <div class="bd-placeholder-img card-img-top card-img-1" width="100%" height="225">
-                        <div class="h-100 p-5 border rounded-3">
-                          <h2>108 年度案件</h2>
-                          <h2>埔里鎮桃米社區休憩空間建置統包工程</h2>
-                          <p>#園冶獎    #台灣景觀大獎</p>
-                        </div>
-                        
-                      </div>
-          
-                      <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <div class="bd-placeholder-img card-img-top card-image-1" style="background: url('image/hero1.jpg');">
+                        <div class="h-100 p-2 border rounded-3 text-white">
+                          <div class="d-flex align-items-start flex-column" style="height: 200px;">
+                            <div class="mb-auto p-2 bd-highlight">
+                              <ul class="list-unstyled">
+                                <li>108 年度案件</li>
+                                <li>埔里鎮桃米社區休憩空間建置統包工程</li>
+                              </ul>
+                            </div>
+                            <div class="p-2 bd-highlight">#園冶獎 #台灣景觀大獎</div>
                           </div>
-                          <small class="text-muted">9 mins</small>
-                        </div>
+                        </div>                        
+                      </div>          
+                      <div class="card-body">
+                        <div class="d-flex bd-highlight">
+                          <div class="p-2 w-100 bd-highlight">
+                            <ul class="list-unstyled fw-bolder" style="font-size: 1rem;">
+                              <li>執行單位： 南投分局</li>
+                              <li>案件位置： 南投縣 埔里鎮 桃米里</li>
+                            </ul>
+                          </div>
+                          <div class="p-2 flex-shrink-1 bd-highlight">
+                            <span class="fa-stack fa-1x" style="color: #585858;">
+                              <i class="fas fa-circle fa-stack-2x"></i>
+                              <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
+                            </span>
+                          </div>
+                        </div>                        
                       </div>
                     </div>
                   </div>
+
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <div class="bd-placeholder-img card-img-top card-image-1" style="background: url('image/excute_thumbnail4.jpg');">
+                        <div class="h-100 p-2 border rounded-3 text-white">
+                          <div class="d-flex align-items-start flex-column" style="height: 200px;">
+                            <div class="mb-auto p-2 bd-highlight">
+                              <ul class="list-unstyled">
+                                <li>108 年度案件</li>
+                                <li>埔里鎮桃米社區休憩空間建置統包工程</li>
+                              </ul>
+                            </div>
+                            <div class="p-2 bd-highlight">#園冶獎 #台灣景觀大獎</div>
+                          </div>
+                        </div>                        
+                      </div>          
+                      <div class="card-body">
+                        <div class="d-flex bd-highlight">
+                          <div class="p-2 w-100 bd-highlight">
+                            <ul class="list-unstyled fw-bolder" style="font-size: 1rem;">
+                              <li>執行單位： 南投分局</li>
+                              <li>案件位置： 南投縣 埔里鎮 桃米里</li>
+                            </ul>
+                          </div>
+                          <div class="p-2 flex-shrink-1 bd-highlight">
+                            <span class="fa-stack fa-1x" style="color: #585858;">
+                              <i class="fas fa-circle fa-stack-2x"></i>
+                              <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
+                            </span>
+                          </div>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <div class="bd-placeholder-img card-img-top card-image-1" style="background: url('image/card4.jpg');">
+                        <div class="h-100 p-2 border rounded-3 text-white">
+                          <div class="d-flex align-items-start flex-column" style="height: 200px;">
+                            <div class="mb-auto p-2 bd-highlight">
+                              <ul class="list-unstyled">
+                                <li>108 年度案件</li>
+                                <li>埔里鎮桃米社區休憩空間建置統包工程</li>
+                              </ul>
+                            </div>
+                            <div class="p-2 bd-highlight">#園冶獎 #台灣景觀大獎</div>
+                          </div>
+                        </div>                        
+                      </div>          
+                      <div class="card-body">
+                        <div class="d-flex bd-highlight">
+                          <div class="p-2 w-100 bd-highlight">
+                            <ul class="list-unstyled fw-bolder" style="font-size: 1rem;">
+                              <li>執行單位： 南投分局</li>
+                              <li>案件位置： 南投縣 埔里鎮 桃米里</li>
+                            </ul>
+                          </div>
+                          <div class="p-2 flex-shrink-1 bd-highlight">
+                            <span class="fa-stack fa-1x" style="color: #585858;">
+                              <i class="fas fa-circle fa-stack-2x"></i>
+                              <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
+                            </span>
+                          </div>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+
+                  
                   
                 </div>                
               </div>
             </div>
 
-            <div class="col-3 bg-white">MAP</div>
+            <!-- Map column -->
+            <div class="col-4 bg-white">MAP</div>
 
           </div>
         </div>
 
         <!-- Footer Start -->
-        <footer class="bg-light">
-          
+        <footer class="bg-light">          
           <div class="text-center p-3 bg-footer">
-            <div class="row justify-content-center">
-              <div class="col-2 text-center"><img class="col-md-4 mb-0" src="image/logo-gov.png" style="width: 100px;"></div>
-                       
-              <div class="col-6">
-                <p class="footer-text text-start align-items-center text-white">行政院農業委員會水土保持局版權所有©2022 All Rights Reserved<br>
+            <div class="d-flex justify-content-center align-items-center">
+              <img class="col-md-4 mb-0" src="image/logo-gov.png" style="width: 100px;">
+              <p class="footer-text text-start text-white align-middle pt-2">行政院農業委員會水土保持局版權所有©2022 All Rights Reserved<br>
                 最佳瀏覽狀態：Edge、Google Chrome 5+、FireFox 5+ 版本以上之瀏覽器 /最佳瀏覽解析度1366*768</p>
-              </div>
-            
             </div>
           </div>        
-        </footer><!-- Footer End -->        
+        </footer><!-- Footer End -->         
     </body>
     <script src="plugin/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="plugin/bootstrap/bootstrap.min.js"></script>
+    <script src="plugin/awesome/js/all.min.js"></script>
 </html>

@@ -12,13 +12,33 @@ select {
     width: 150px;
 }
 
+a:link {
+    text-decoration: none;
+    color: #747272;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: #747272;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: #747272;
+  }
+  
+  a:active {
+    text-decoration: none;
+    color: #747272;
+  }
+
 .bordertop {
     line-height: 1;
     border-top: 8px solid #03B13A;
 }
 
 .text-white {
-    color: white;
+    color: white !important;
     font-weight: bold;
 }
 
@@ -95,6 +115,7 @@ select {
 
 .footer-text {
     font-size: 1rem;
+    text-align: center;
 }
 
 .mx-auto {
@@ -110,23 +131,46 @@ select {
 }
 
 .small-text {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .info-img {
     width: 164px;
     height: 100%;
-}
-
-.card-img-1 {
-    background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-    background: url('../image/1.jpg');
+    background-repeat: no-repeat !important;
+	background-position: center center !important;
+	background-size: cover !important;
 }
 
 .hero-image {
-    background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
+    background-repeat: no-repeat !important;
+	background-position: center center !important;
+	background-size: cover !important;
+}
+
+.card-image-1 {
+    background-repeat: no-repeat !important;
+	background-position: center center !important;
+	background-size: cover !important;
+    height: 225px;
+}
+
+.thumbnail-lg {
+    background-repeat: no-repeat !important;
+	background-position: center center !important;
+	background-size: cover !important;
+    width: 536px;
+    height: 200px;
+}
+
+.thumbnail-sm {
+    background-repeat: no-repeat !important;
+	background-position: center center !important;
+	background-size: cover !important;
+    width: 258px;
+    height: 200px;
+}
+
+.thumbnail-container {
+    width: 1092px;
 }

@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="plugin/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="plugin/bootstrap/bootstrap.5.0.2.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="/plugin/awesome/css/all.min.css" rel="stylesheet">
+    <link href="/plugin/awesome/css/v4-shims.min.css" rel="stylesheet">
+    <link href="/plugin/awesome/css/svg-with-js.min.css" rel="stylesheet">
     <style>
         
     </style>
@@ -17,15 +20,17 @@
     <body>
         <!-- header start -->
         <header class="bd-header py-3 d-flex align-items-stretch bordertop">
-            <div class="container-fluid d-flex align-items-center">
-              <h1 class="d-flex align-items-center fs-4 mb-0">
+          <div class="container-fluid d-flex align-items-center">
+            <a href="index.html" alt="回主頁" >
+              <h1 class="d-flex align-items-center fs-4 mb-0 fw-bolder">
                 <img src="/image/logo.png" width="41" height="54" class="me-3" alt="">
                 農村再生執行及管理系統
               </h1>
-            </div>
-        </header><!-- header end -->
+            </a>
+          </div>
+       </header><!-- header end -->
 
-
+        <!-- Hero start -->
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -33,20 +38,20 @@
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item carousel-img active">
-                <img src="image/hero1.jpg" class="d-block w-100" alt="">
+              <div class="carousel-item carousel-img active hero-image" style="background: url('image/hero1.jpg');">
+               
                 <div class="carousel-caption d-none d-md-block">
                   <h5>成果交流專區1</h5>                  
                 </div>
               </div>
-              <div class="carousel-item carousel-img">
-                <img src="image/hero1.jpg" class="d-block w-100" alt="">
+              <div class="carousel-item carousel-img hero-image" style="background: url('image/hero1.jpg');">
+ 
                 <div class="carousel-caption d-none d-md-block">
                   <h5>成果交流專區2</h5>                  
                 </div>
               </div>
-              <div class="carousel-item carousel-img">
-                <img src="image/hero1.jpg" class="d-block w-100" alt="">
+              <div class="carousel-item carousel-img hero-image" style="background: url('image/hero1.jpg');">
+
                 <div class="carousel-caption d-none d-md-block">
                   <h5>成果交流專區3</h5>                  
                 </div>
@@ -60,7 +65,7 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-        </div>
+        </div><!-- Hero end -->
 
         <!-- 快速查詢 Start -->
         <div class="container">
@@ -85,8 +90,8 @@
                     </select>
                 </div>
                 <div class="col">
-                    <a class="btn btn-green" href="#!" role="button">
-                      <i class="fab fa-twitter me-2"></i>
+                    <a class="btn btn-green text-white" href="#!" role="button">
+                      <i class="fas fa-search"></i>
                       查詢
                     </a>
                 </div>
@@ -95,206 +100,132 @@
 
         <!-- 執行單位 Start -->
         <div class="bg-light p-25">            
-            <div class="container">
+            <div class="container thumbnail-container">
                 <div class="row subtitle">執行單位</div>
-                <div class="row g-2 g-lg-3">
-                  <div class="col-6">
-                    <div class="bg-image">
-                      <img
-                        src="image/excute_thumbnail1.jpg"
-                        class="img-fluid"
-                        alt="南投分局"
-                      />
-                      <div class="mask">
-                        <div class="d-flex justify-content-center align-items-end h-100">
-                          <p class="text-white mb-0">南投分局</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="row g-2"> 
                   <div class="col">
-                    <div class="bg-image">
-                      <img
-                        src="image/excute_thumbnail2.jpg"
-                        class="img-fluid"
-                        alt="臺中分局"
-                      />
-                      <div class="mask">
+                    <a href="multiSearch.html">                    
+                      <div class="thumbnail-lg" style="background: url('image/excute_thumbnail1.jpg');">
                         <div class="d-flex justify-content-center align-items-end h-100">
-                          <p class="text-white mb-0">臺中分局</p>
-                        </div>
+                          <p class="text-white mb-0">南投分局</p> 
+                        </div>                                    
                       </div>
-                    </div>
+                    </a>                   
                   </div>
+                  
+                  <div class="col">                    
+                    <div class="thumbnail-sm" style="background: url('image/excute_thumbnail2.jpg');">
+                      <div class="d-flex justify-content-center align-items-end h-100">
+                        <p class="text-white mb-0">臺中分局</p> 
+                      </div>                                      
+                    </div>                    
+                  </div>
+
+                  <div class="col">                 
+                    <div class="thumbnail-sm" style="background: url('image/excute_thumbnail3.jpg');">
+                      <div class="d-flex justify-content-center align-items-end h-100">
+                        <p class="text-white mb-0">臺北分局</p>
+                      </div>                 
+                    </div>                    
+                  </div>
+
                   <div class="col">
-                    <div class="bg-image">
-                      <img
-                        src="image/excute_thumbnail3.jpg"
-                        class="img-fluid"
-                        alt="臺北分局"
-                      />
-                      <div class="mask">
-                        <div class="d-flex justify-content-center align-items-end h-100">
-                          <p class="text-white mb-0">臺北分局</p>
-                        </div>
-                      </div>
-                    </div>
+                    <div class="thumbnail-lg" style="background: url('image/excute_thumbnail4.jpg');">
+                      <div class="d-flex justify-content-center align-items-end h-100">
+                        <p class="text-white mb-0">臺南分局</p>
+                      </div>                 
+                    </div>  
                   </div>
-                  <div class="col-6">
-                    <div class="bg-image">
-                      <img
-                        src="image/excute_thumbnail4.jpg"
-                        class="img-fluid"
-                        alt="臺南分局"
-                      />
-                      <div class="mask">
-                        <div class="d-flex justify-content-center align-items-end h-100">
-                          <p class="text-white mb-0">臺南分局</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+
                   <div class="col">
-                    <div class="bg-image">
-                      <img
-                        src="image/excute_thumbnail5.jpg"
-                        class="img-fluid"
-                        alt="花蓮分局"
-                      />
-                      <div class="mask">
-                        <div class="d-flex justify-content-center align-items-end h-100">
-                          <p class="text-white mb-0">花蓮分局</p>
-                        </div>
-                      </div>
-                    </div>
+                    <div class="thumbnail-sm" style="background: url('image/hero1.jpg');">
+                      <div class="d-flex justify-content-center align-items-end h-100">
+                        <p class="text-white mb-0">花蓮分局</p>
+                      </div>                 
+                    </div>  
                   </div>
+
                   <div class="col">
-                    <div class="bg-image">
-                      <img
-                        src="image/excute_thumbnail6.jpg"
-                        class="img-fluid"
-                        alt="臺東分局"
-                      />
-                      <div class="mask">
-                        <div class="d-flex justify-content-center align-items-end h-100">
-                          <p class="text-white mb-0">臺東分局</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>                  
+                    <div class="thumbnail-sm" style="background: url('image/excute_thumbnail6.jpg');">
+                      <div class="d-flex justify-content-center align-items-end h-100">
+                        <p class="text-white mb-0">臺東分局</p>
+                      </div>                 
+                    </div>  
+                  </div>  
+
                 </div>
               </div>
         </div><!-- 執行單位 End -->
         
         <!-- 獎項分類 Start -->
-        <div class="bg-white p-25">            
-          <div class="container">
+        <div class="bg-light p-25">            
+          <div class="container thumbnail-container">
               <div class="row subtitle">獎項分類</div>
-              <div class="row g-2 g-lg-3">
-                <div class="col-6">
-                  <div class="bg-image">
-                    <img
-                      src="image/excute_thumbnail1.jpg"
-                      class="img-fluid"
-                      alt="金質獎"
-                    />
-                    <div class="mask">
-                      <div class="d-flex justify-content-center align-items-end h-100">
-                        <p class="text-white mb-0">金質獎</p>
-                      </div>
-                    </div>
-                  </div>
+              <div class="row g-2"> 
+                <div class="col">                    
+                  <div class="thumbnail-lg" style="background: url('image/excute_thumbnail1.jpg');">
+                    <div class="d-flex justify-content-center align-items-end h-100">
+                      <p class="text-white mb-0">金質獎</p> 
+                    </div>                                    
+                  </div>                    
                 </div>
+                
+                <div class="col">                    
+                  <div class="thumbnail-sm" style="background: url('image/excute_thumbnail2.jpg');">
+                    <div class="d-flex justify-content-center align-items-end h-100">
+                      <p class="text-white mb-0">優良農建</p> 
+                    </div>                                      
+                  </div>                    
+                </div>
+
+                <div class="col">                 
+                  <div class="thumbnail-sm" style="background: url('image/excute_thumbnail3.jpg');">
+                    <div class="d-flex justify-content-center align-items-end h-100">
+                      <p class="text-white mb-0">園冶獎</p>
+                    </div>                 
+                  </div>                    
+                </div>
+
                 <div class="col">
-                  <div class="bg-image">
-                    <img
-                      src="image/excute_thumbnail2.jpg"
-                      class="img-fluid"
-                      alt="優良農建"
-                    />
-                    <div class="mask">
-                      <div class="d-flex justify-content-center align-items-end h-100">
-                        <p class="text-white mb-0">優良農建</p>
-                      </div>
-                    </div>
-                  </div>
+                  <div class="thumbnail-lg" style="background: url('image/excute_thumbnail4.jpg');">
+                    <div class="d-flex justify-content-center align-items-end h-100">
+                      <p class="text-white mb-0">國家卓越建設獎</p>
+                    </div>                 
+                  </div>  
                 </div>
+
                 <div class="col">
-                  <div class="bg-image">
-                    <img
-                      src="image/excute_thumbnail3.jpg"
-                      class="img-fluid"
-                      alt="園冶獎"
-                    />
-                    <div class="mask">
-                      <div class="d-flex justify-content-center align-items-end h-100">
-                        <p class="text-white mb-0">園冶獎</p>
-                      </div>
-                    </div>
-                  </div>
+                  <div class="thumbnail-sm" style="background: url('image/hero1.jpg');">
+                    <div class="d-flex justify-content-center align-items-end h-100">
+                      <p class="text-white mb-0">台灣景觀大獎</p>
+                    </div>                 
+                  </div>  
                 </div>
-                <div class="col-6">
-                  <div class="bg-image">
-                    <img
-                      src="image/excute_thumbnail4.jpg"
-                      class="img-fluid"
-                      alt="國家卓越建設獎"
-                    />
-                    <div class="mask">
-                      <div class="d-flex justify-content-center align-items-end h-100">
-                        <p class="text-white mb-0">國家卓越建設獎</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
                 <div class="col">
-                  <div class="bg-image">
-                    <img
-                      src="image/excute_thumbnail5.jpg"
-                      class="img-fluid"
-                      alt="台灣景觀大獎"
-                    />
-                    <div class="mask">
-                      <div class="d-flex justify-content-center align-items-end h-100">
-                        <p class="text-white mb-0">台灣景觀大獎</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="bg-image">
-                    <img
-                      src="image/excute_thumbnail6.jpg"
-                      class="img-fluid"
-                      alt="工程環境與美化獎"
-                    />
-                    <div class="mask">
-                      <div class="d-flex justify-content-center align-items-end h-100">
-                        <p class="text-white mb-0">工程環境與美化獎</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>                  
+                  <div class="thumbnail-sm" style="background: url('image/excute_thumbnail6.jpg');">
+                    <div class="d-flex justify-content-center align-items-end h-100">
+                      <p class="text-white mb-0">工程環境與美化獎</p>
+                    </div>                 
+                  </div>  
+                </div>  
+
               </div>
-            </div>
+          </div>
         </div><!-- 獎項分類 End -->
 
         <!-- Footer Start -->
-        <footer class="bg-light">
-          
+        <footer class="bg-light">          
           <div class="text-center p-3 bg-footer">
-            <div class="row justify-content-center">
-              <div class="col-2 text-center"><img class="col-md-4 mb-0" src="image/logo-gov.png" style="width: 100px;"></div>
-                       
-              <div class="col-6">
-                <p class="footer-text text-start align-items-center text-white">行政院農業委員會水土保持局版權所有©2022 All Rights Reserved<br>
+            <div class="d-flex justify-content-center align-items-center align-middle">
+              <img class="col-md-4 mb-0" src="image/logo-gov.png" style="width: 100px;">
+              <p class="footer-text text-start text-white align-middle pt-2">行政院農業委員會水土保持局版權所有©2022 All Rights Reserved<br>
                 最佳瀏覽狀態：Edge、Google Chrome 5+、FireFox 5+ 版本以上之瀏覽器 /最佳瀏覽解析度1366*768</p>
-              </div>
-            
             </div>
           </div>        
-        </footer><!-- Footer End -->        
+        </footer><!-- Footer End -->         
     </body>
     <script src="plugin/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="plugin/bootstrap/bootstrap.min.js"></script>
+    <script src="plugin/awesome/js/all.min.js"></script>
 </html>
