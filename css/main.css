@@ -80,7 +80,7 @@ a:link {
 }
 
 .carousel {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     position: relative;
 }
 
@@ -89,8 +89,26 @@ a:link {
 }
 
 .carousel-img {
-    height: 460px;
+    height: 280px;
     object-fit:cover;
+}
+
+.bg-black-opacity {
+    background-color: #0000005c;
+}
+
+.carousel-img-index {
+    height: 580px;
+    object-fit:cover;
+}
+
+@media (max-width: 480px) {
+    .carousel-img-index {
+        height: 200px;
+    }
+    .carousel-img {
+        height: 140px;
+    }
 }
 
 .h-200 {
@@ -212,4 +230,8 @@ a:link {
 .carousel-text {
     bottom: 30% !important;
     font-size: 2rem;
+}
+
+.text-white {
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.445);
 }
