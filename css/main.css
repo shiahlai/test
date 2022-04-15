@@ -179,13 +179,13 @@ a:link {
     }
  }
 
- @media (max-width: 768px) { 
+@media (max-width: 768px) { 
     .thumbnail-container {
         width: 570px;
     }
  }
 
-@media screen and (max-width: 400px){ 
+@media screen and (max-width: 420px){ 
     .thumbnail-lg {
         width: 325px;
         height: 200px;
@@ -200,12 +200,14 @@ a:link {
     }
   }
 
-.search-bar {
-    margin-left: 10rem;
-    margin-right: 10rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
+@media (min-width: 992px) { 
+    .search-bar {
+        margin-left: 10rem;
+        margin-right: 10rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+ }
 
 .carousel-text {
     bottom: 30% !important;
