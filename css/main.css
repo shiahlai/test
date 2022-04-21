@@ -99,17 +99,23 @@ a:link {
     position: relative;
 }
 
-.carousel-img {
-    height: 280px;
-    object-fit:cover;
-}
 
 .bg-black-opacity {
     background-color: #0000005c;
 }
 
+.carousel-img {
+    height: 280px;
+    object-fit:cover;
+}
+
 .carousel-img-index {
     height: 580px;
+}
+
+.carousel-img-modal {
+    height: 480px;
+    object-fit:cover;
 }
 
 .carousel-text {
@@ -129,10 +135,12 @@ a:link {
     .carousel-img {
         height: 140px;
     }
+    .carousel-img-modal {
+        height: 240px;
+    }
     .carousel-text {
         font-size: 1.25rem;
     }
-
     .hero-text {
         font-size: 1.25rem;
     }
@@ -141,6 +149,9 @@ a:link {
 @media (min-width: 421px) and (max-width: 820px){
     .carousel-img-index {
         height: 280px;
+    }
+    .carousel-img-modal {
+        height: 400px;
     }
 }
 
@@ -210,6 +221,7 @@ a:link {
 
 .list-decimal {
     list-style-type: decimal;
+    padding-left: 1.5rem;
 }
 
 
@@ -277,10 +289,12 @@ a:link {
     border-left: 1px solid hsl(0, 0%, 90%);
     position: relative;
     list-style: none;
+    left: 0.5rem;
   }
 
   .timeline .timeline-item {
     position: relative;
+    padding-left: 0.25rem;
   }
 
   .timeline .timeline-item:after {
