@@ -43,9 +43,22 @@ a:link {
     border-top: 8px solid #03B13A;
 }
 
+.card-title {
+    color: #00723E;
+}
+
+.text-neutral-600 {
+    color: #525252
+}
+
+.bg-footer {
+    background-color: #03B13A;
+}
+
 .text-white {
     color: white !important;
     font-weight: bold;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.445);
 }
 
 .searchbackground {
@@ -81,17 +94,9 @@ a:link {
     color: #585858;
 }
 
-.p-25 {
-    padding: 25px;
-}
-
 .carousel {
     margin-bottom: 2rem;
     position: relative;
-}
-
-.m-25 {
-    margin: 25px;
 }
 
 .carousel-img {
@@ -140,8 +145,33 @@ a:link {
     height: 200px;
 }
 
-.bg-footer {
-    background-color: #03B13A;
+.w-s-100 {
+    width: 100px;
+}
+
+.p-25 {
+    padding: 25px;
+}
+
+.m-25 {
+    margin: 25px;
+}
+
+.footer-text {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.mx-auto {
+    margin: 0 auto;
+  }
+
+.content {
+    font-size: 1.25rem;
+}
+
+.small-text {
+    font-size: 1rem;
 }
 
 .mask {
@@ -156,26 +186,6 @@ a:link {
     background-attachment:fixed;
 }
 
-.footer-text {
-    font-size: 1rem;
-    text-align: center;
-}
-
-.mx-auto {
-    margin: 0 auto;
-  }
-
-.card-title {
-    color: #00723E;
-}
-
-.content {
-    font-size: 1.25rem;
-}
-
-.small-text {
-    font-size: 1rem;
-}
 
 .info-img {
     width: 100%;
@@ -185,6 +195,18 @@ a:link {
 
 .map-right {
     height: 936px;
+}
+
+.mid-col-h {
+    height: 854px;
+}
+
+.obj-cover {
+    object-fit: cover;
+}
+
+.list-decimal {
+    list-style-type: decimal;
 }
 
 
@@ -217,11 +239,6 @@ a:link {
     }
  }
 
-
-.text-white {
-    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.445);
-}
-
 .grid-thumbnail {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
@@ -244,6 +261,29 @@ a:link {
     }
  }
 
-.obj-cover {
-    object-fit: cover;
-}
+/* time line */
+.timeline {
+    border-left: 1px solid hsl(0, 0%, 90%);
+    position: relative;
+    list-style: none;
+  }
+
+  .timeline .timeline-item {
+    position: relative;
+  }
+
+  .timeline .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+
+  .timeline .timeline-item:after {
+    background-color: #03B13A;
+    left: -6px;
+    top: 9px;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+  }
