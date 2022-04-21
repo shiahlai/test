@@ -112,15 +112,6 @@ a:link {
     height: 580px;
 }
 
-@media (max-width: 480px) {
-    .carousel-img-index {
-        height: 200px;
-    }
-    .carousel-img {
-        height: 140px;
-    }
-}
-
 .carousel-text {
     bottom: 30% !important;
     font-size: 2rem;
@@ -131,7 +122,13 @@ a:link {
     font-size: 2rem;
 }
 
-@media screen and (max-width: 420px){ 
+@media (max-width: 480px) {
+    .carousel-img-index {
+        height: 200px;
+    }
+    .carousel-img {
+        height: 140px;
+    }
     .carousel-text {
         font-size: 1.25rem;
     }
@@ -139,7 +136,13 @@ a:link {
     .hero-text {
         font-size: 1.25rem;
     }
- }
+}
+
+@media (min-width: 421px) and (max-width: 820px){
+    .carousel-img-index {
+        height: 280px;
+    }
+}
 
 .h-200 {
     height: 200px;
