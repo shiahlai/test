@@ -105,7 +105,6 @@ a:link {
 
 .carousel-img-index {
     height: 580px;
-    object-fit:cover;
 }
 
 @media (max-width: 480px) {
@@ -162,13 +161,6 @@ a:link {
     width: 100%;
     height: 100%;
     object-fit: cover;   
-}
-
-.hero-image {
-    background-repeat: no-repeat !important;
-	background-position: center center !important;
-	background-size: cover !important;
-    filter: grayscale(10%);
 }
 
 .card-image-1 {
@@ -232,6 +224,13 @@ a:link {
     bottom: 30% !important;
     font-size: 2rem;
 }
+
+@media screen and (max-width: 420px){ 
+    .carousel-text {
+        bottom: 30% !important;
+        font-size: 1.25rem;
+    }
+ }
 
 .text-white {
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.445);
