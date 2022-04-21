@@ -256,13 +256,21 @@ a:link {
     }
  }
 
- @media (min-width: 421px) and (max-width: 820px){ 
+@media (min-width: 421px) and (max-width: 820px){ 
     .grid-thumbnail {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 200px;
     }
  }
+
+@media (min-width: 421px) and (max-width: 820px){ 
+    .grid-form-check {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+     }
+ }
+
 
 /* time line */
 .timeline {
