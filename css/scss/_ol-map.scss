@@ -1,0 +1,165 @@
+#mapColumn {
+  #map {
+    height: 920px;
+    // #mapPoint {
+    //   display: none;
+    // }
+  }
+}
+
+#caseMap {
+  #map {
+    height: 650px;
+    width: 100%;
+    // #mapClusters {
+    //   display: none;
+    // }
+  }
+}
+
+
+#mapPage {
+  position: relative;
+
+  #map {
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
+    flex-grow: 1;
+    position: relative;
+
+    >.rt-block,
+    >.rb-block,
+    >.rm-block {
+      position: absolute;
+      right: 1rem;
+      z-index: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      gap: 1rem;
+
+      section>div {
+        position: static;
+      }
+    }
+
+    >.rt-block {
+      top: 2rem;
+    }
+
+    >.rb-block {
+      bottom: 0.5rem;
+    }
+
+    >.rm-block {
+      top: 30%;
+    }
+
+    //openlayers mapZoomInOut
+    .ol-control {
+      padding: 0px;
+
+      button {
+        margin: 0px;
+        font-size: 1.75rem;
+        background-color: rgba(1, 46, 100, 0.7)!important;
+      }
+    }
+
+    .ol-zoom .ol-zoom-in {
+      border-radius: 4px 4px 0 0;
+      margin-bottom: 2px;
+    }
+    .ol-zoom .ol-zoom-out {
+      border-radius: 0 0 4px 4px;
+    }
+  }
+
+  // #mapToolbar {
+  //   position: absolute;
+  //   top: 1rem;
+  //   left: 0.5rem;
+  //   display: flex;
+  //   align-items: start;
+  //   transform: translateX(calc(-100% + 1rem));
+  //   z-index: 1;
+  //   transition: transform 0.2s;
+
+  //   &.show {
+  //     transform: translateX(0);
+  //   }
+
+  //   .toolbar-nav {
+  //     border-radius: 0.5rem;
+  //     background-color: #fff;
+  //     padding: 0.5rem;
+
+  //     // max-height: 80vh;
+  //     // overflow-y: auto;
+  //     ul {
+  //       display: flex;
+  //       flex-direction: column;
+  //       gap: 8px;
+
+  //       li {
+  //         display: flex;
+  //         align-items: center;
+  //         justify-content: center;
+
+  //         a {
+  //           position: relative;
+  //           padding-bottom: 100%;
+  //           width: 3rem;
+  //           border-radius: 0.5rem;
+  //           background-color: #fff;
+  //           transition: background-color 0.2s;
+
+  //           &:hover {
+  //             color: #fff;
+  //             background-color: $color-main;
+  //           }
+
+  //           i {
+  //             position: absolute;
+  //             top: 50%;
+  //             left: 50%;
+  //             transform: translate(-50%, -50%);
+  //             font-size: 1.5rem;
+  //             color: #555;
+
+  //             &:hover {
+  //               color: inherit;
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+
+  //   .btn-nav-toggle {
+  //     &:hover {
+  //       background-color: #555;
+  //     }
+
+  //     i::before {
+  //       margin: 0;
+  //     }
+  //   }
+
+  //   .toolbar-content {
+  //     position: absolute;
+  //     left: calc(100% + 1rem);
+  //     width: max-content;
+  //   }
+  // }
+}

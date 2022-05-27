@@ -1,259 +1,47 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
+<html lang="zh-Hant-Tw">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <meta name="author" content="">
-  <title>農村再生執行及管理系統</title>
-  <link rel="stylesheet" href="plugin/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link href="/plugin/awesome/css/all.min.css" rel="stylesheet">
-  <link href="/plugin/awesome/css/v4-shims.min.css" rel="stylesheet">
-  <link href="/plugin/awesome/css/svg-with-js.min.css" rel="stylesheet">
-  <style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon/favicon-32x32.svg">
 
-  </style>
+    <!-- plugins css -->
+    <link rel="stylesheet" href="./plugins/openlayers/ol.css">
+    <link rel="stylesheet" href="./plugins/fontello/css/fontello.css">
+    <link rel="stylesheet" href="./plugins/tw-elements/tw-elements.min.css">
+    <link rel="stylesheet" href="./plugins/bootstrap/bootstrap.min.css">
+
+
+
+    <!-- plugins JS -->
+    <script src="./plugins/axios/axios.min.js"></script>
+    <script src="./plugins/better-scroll/core.min.js"></script>
+    <script src="./plugins/openlayers/ol.js"></script>
+    <script src="./plugins/vue/vue.global.js"></script>
+    <script src="./plugins/vue-router/vue-router.global.js"></script>
+    <script src="./plugins/tw-elements/tailwind.min.js"></script>
+    <script src="./plugins/tw-elements/popper.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- script -->
+    <script src="./js/main.js" type="module"></script>
+
 </head>
 
 <body>
-  <!-- header start -->
-  <header class="bd-header py-3 d-flex align-items-stretch bordertop">
-    <div class="container-fluid d-flex align-items-center">
-      <a href="index.html" alt="回主頁">
-        <h1 class="d-flex align-items-center fs-4 mb-0 fw-bolder">
-          <img src="image/logo.png" width="41" height="54" class="me-3" alt="農村再生執行及管理系統">
-          農村再生執行及管理系統
-        </h1>
-      </a>
+    <div id="app">
+        <router-view></router-view>
     </div>
-  </header><!-- header end -->
+    <!-- plugins JS -->
+    <script src="./plugins/tw-elements/index.min.js"></script>
+    <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
 
-  <!-- main start -->
-  <main>
-    <!-- Hero start -->
-    <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="active" aria-current="true"
-          aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="position-relative w-100 carousel-item carousel-img-index active">
-          <img src="image/hero1.jpg" class="w-100 h-100 obj-cover" alt="成果交流專區">
-          <div class="position-absolute bg-black-opacity top-0 bottom-0 start-0 end-0 d-flex justify-content-center">
-            <p
-              class="pt-4 top-50 start-50 translate-middle text-white carousel-text carousel-caption d-md-block fw-bolder ">
-              成果交流專區</p>
-          </div>
-        </div>
-
-        <div class="position-relative w-100 carousel-item carousel-img-index">
-          <img src="image/excute_thumbnail1.jpg" class="w-100 h-100 obj-cover" alt="成果交流專區">
-          <div class="position-absolute bg-black-opacity top-0 bottom-0 start-0 end-0 d-flex justify-content-center">
-            <p
-              class="pt-4 top-50 start-50 translate-middle text-white carousel-text carousel-caption d-md-block fw-bolder ">
-              成果交流專區</p>
-          </div>
-        </div>
-
-        <div class="position-relative w-100 carousel-item carousel-img-index">
-          <img src="image/info-hero.jpg" class="w-100 h-100 obj-cover" alt="成果交流專區">
-          <div class="position-absolute bg-black-opacity top-0 bottom-0 start-0 end-0 d-flex justify-content-center">
-            <p
-              class="pt-4 top-50 start-50 translate-middle text-white carousel-text carousel-caption d-md-block fw-bolder ">
-              成果交流專區</p>
-          </div>
-        </div>
-
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div><!-- Hero end -->
-
-    <!-- 快速查詢 Start -->
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-10 text-white searchbackground d-flex align-items-center justify-content-center rounded">
-          <p>快速查詢</p>
-        </div>
-      </div>
-
-      <div class="row searchbox position-relative d-flex justify-content-center row-cols-lg-4 g-2 g-lg-3 search-bar">
-        <div class="col-xl-3 col-md-12 col-sm-12">
-          <select class="select-light">
-            <option>得獎年度</option>
-          </select>
-        </div>
-        <div class="col-xl-3 col-md-12 col-sm-12">
-          <select>
-            <option>執行單位</option>
-          </select>
-        </div>
-        <div class="col-xl-3 col-md-12 col-sm-12">
-          <select>
-            <option>獎項</option>
-          </select>
-        </div>
-        <div class="col-xl-3 col-md-12 col-sm-12">
-          <a class="btn btn-green text-white" href="#!" role="button">
-            <i class="fas fa-search"></i>
-            查詢
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- 快速查詢 Start -->
-
-
-    <!-- 執行單位 Start -->
-    <div class="bg-light p-25">
-      <div class="container thumbnail-container">
-        <div class="row subtitle">執行單位</div>
-        <div class="row g-2 grid-thumbnail">
-          <div class="col">
-            <a href="multiSearch.html" alt="點擊至複合式查詢頁" class="position-relative d-block w-100 h-100">
-              <img src="image/excute_thumbnail1.jpg" class="w-100 h-100 obj-cover" alt="南投分局">
-              <div class="position-absolute bg-black-opacity bottom-0 start-0 end-0 d-flex justify-content-center">
-                <p class="text-white mb-0">南投分局</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a href="multiSearch.html" alt="點擊至複合式查詢頁" class="position-relative d-block w-100 h-100">
-              <img src="image/excute_thumbnail2.jpg" class="w-100 h-100 obj-cover" alt="臺中分局">
-              <div class="position-absolute bg-black-opacity bottom-0 start-0 end-0 d-flex justify-content-center">
-                <p class="text-white mb-0">臺中分局</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a href="multiSearch.html" alt="點擊至複合式查詢頁" class="position-relative d-block w-100 h-100">
-              <img src="image/excute_thumbnail3.jpg" class="w-100 h-100 obj-cover" alt="臺北分局">
-              <div class="position-absolute bg-black-opacity bottom-0 start-0 end-0 d-flex justify-content-center">
-                <p class="text-white mb-0">臺北分局</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a href="multiSearch.html" alt="點擊至複合式查詢頁" class="position-relative d-block w-100 h-100">
-              <img src="image/excute_thumbnail4.jpg" class="w-100 h-100 obj-cover" alt="臺南分局">
-              <div class="position-absolute bg-black-opacity bottom-0 start-0 end-0 d-flex justify-content-center">
-                <p class="text-white mb-0">臺南分局</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a href="multiSearch.html" alt="點擊至複合式查詢頁" class="position-relative d-block w-100 h-100">
-              <img src="image/hero1.jpg" class="w-100 h-100 obj-cover" alt="花蓮分局">
-              <div class="position-absolute bg-black-opacity bottom-0 start-0 end-0 d-flex justify-content-center">
-                <p class="text-white mb-0">花蓮分局</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a href="multiSearch.html" alt="點擊至複合式查詢頁" class="position-relative d-block w-100 h-100">
-              <img src="image/excute_thumbnail6.jpg" class="w-100 h-100 obj-cover" alt="臺東分局">
-              <div class="position-absolute bg-black-opacity bottom-0 start-0 end-0 d-flex justify-content-center">
-                <p class="text-white mb-0">臺東分局</p>
-              </div>
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </div><!-- 執行單位 End -->
-
-    <!-- 獎項分類 Start -->
-    <div class="bg-light p-25">
-      <div class="container thumbnail-container">
-        <div class="row subtitle">獎項分類</div>
-        <div class="row g-2 grid-thumbnail">
-          <div class="col">
-            <a href="multiSearch.html" alt="點擊至複合式查詢頁" class="position-relative d-block w-100 h-100">
-              <img src="image/excute_thumbnail1.jpg" class="w-100 h-100 obj-cover" alt="金質獎">
-              <div class="position-absolute bg-black-opacity bottom-0 start-0 end-0 d-flex justify-content-center">
-                <p class="text-white mb-0">金質獎</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a href="multiSearch.html" alt="點擊至複合式查詢頁" class="position-relative d-block w-100 h-100">
-              <img src="image/excute_thumbnail2.jpg" class="w-100 h-100 obj-cover" alt="優良農建">
-              <div class="position-absolute bg-black-opacity bottom-0 start-0 end-0 d-flex justify-content-center">
-                <p class="text-white mb-0">優良農建</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a href="multiSearch.html" alt="點擊至複合式查詢頁" class="position-relative d-block w-100 h-100">
-              <img src="image/excute_thumbnail3.jpg" class="w-100 h-100 obj-cover" alt="園冶獎">
-              <div class="position-absolute bg-black-opacity bottom-0 start-0 end-0 d-flex justify-content-center">
-                <p class="text-white mb-0">園冶獎</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a href="multiSearch.html" alt="點擊至複合式查詢頁" class="position-relative d-block w-100 h-100">
-              <img src="image/excute_thumbnail4.jpg" class="w-100 h-100 obj-cover" alt="國家卓越建設獎">
-              <div class="position-absolute bg-black-opacity bottom-0 start-0 end-0 d-flex justify-content-center">
-                <p class="text-white mb-0">國家卓越建設獎</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a href="multiSearch.html" alt="點擊至複合式查詢頁" class="position-relative d-block w-100 h-100">
-              <img src="image/hero1.jpg" class="w-100 h-100 obj-cover" alt="台灣景觀大獎">
-              <div class="position-absolute bg-black-opacity bottom-0 start-0 end-0 d-flex justify-content-center">
-                <p class="text-white mb-0">台灣景觀大獎</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a href="multiSearch.html" alt="點擊至複合式查詢頁" class="position-relative d-block w-100 h-100">
-              <img src="image/excute_thumbnail6.jpg" class="w-100 h-100 obj-cover" alt="工程環境與美化獎">
-              <div class="position-absolute bg-black-opacity bottom-0 start-0 end-0 d-flex justify-content-center">
-                <p class="text-white mb-0">工程環境與美化獎</p>
-              </div>
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </div><!-- 獎項分類 End -->
-  </main><!-- main end -->
-
-  <!-- Footer Start -->
-  <footer class="bg-light">
-    <div class="text-center p-3 bg-footer">
-      <div class="d-flex justify-content-center align-items-center align-middle">
-        <img class="col-md-4 mb-0 w-s-100" src="image/logo-gov.png" alt="行政院農業委員會水土保持局">
-        <p class="footer-text text-start text-white align-middle pt-2 ps-3">行政院農業委員會水土保持局版權所有©2022 All Rights
-          Reserved<br>
-          最佳瀏覽狀態：Edge、Google Chrome 5+、FireFox 5+ 版本以上之瀏覽器 /最佳瀏覽解析度1366*768</p>
-      </div>
-    </div>
-  </footer><!-- Footer End -->
 </body>
-<script src="plugin/bootstrap/bootstrap.bundle.min.js"></script>
-<script src="plugin/awesome/js/all.min.js"></script>
 
 </html>

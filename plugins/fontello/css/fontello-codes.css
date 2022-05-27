@@ -1,0 +1,21 @@
+
+.icon-location:before { content: '\e800'; } /* '' */
+.icon-layers:before { content: '\e801'; } /* '' */
+.icon-arrow-right:before { content: '\e802'; } /* '' */
+.icon-arrow-top:before { content: '\e803'; } /* '' */
+.icon-arrow-bottom:before { content: '\e804'; } /* '' */
+.icon-arrow-left:before { content: '\e805'; } /* '' */
+.icon-menu:before { content: '\e806'; } /* '' */
+.icon-globe:before { content: '\e807'; } /* '' */
+.icon-target:before { content: '\e808'; } /* '' */
+.icon-trash:before { content: '\e809'; } /* '' */
+.icon-file-alt:before { content: '\e80a'; } /* '' */
+.icon-images:before { content: '\e80b'; } /* '' */
+.icon-map-marked-alt:before { content: '\e80c'; } /* '' */
+.icon-taiwan:before { content: '\e80d'; } /* '' */
+.icon-medal:before { content: '\e80e'; } /* '' */
+.icon-cancel:before { content: '\e80f'; } /* '' */
+.icon-search:before { content: '\e810'; } /* '' */
+.icon-pin:before { content: '\e811'; } /* '' */
+.icon-direction:before { content: '\f124'; } /* '' */
+.icon-info:before { content: '\f129'; } /* '' */
